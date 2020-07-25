@@ -112,16 +112,19 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#mission">Наша миссия</Link>
-                    </li>
-                    <li>
                       <Link to="#about">О нас</Link>
                     </li>
                     <li>
-                      <Link to="#recommendations">Отзывы</Link>
+                      <Link to="#mission">Наша миссия</Link>
                     </li>
                     <li>
-                      <Link to="#contact">Связаться с нами</Link>
+                      <Link to="#teachers">Кто такие наши учителя</Link>
+                    </li>
+                    <li>
+                      <Link to="#recommendations">Принцип работы</Link>
+                    </li>
+                    <li>
+                      <Link to="#contact">Отзывы</Link>
                     </li>
                   </ul>
                 </div>

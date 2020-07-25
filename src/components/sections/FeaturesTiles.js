@@ -46,8 +46,8 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'Математика',
-    paragraph: 'Какой-то текст'
+    title: 'Наши услуги',
+    paragraph: ''
   };
 
   return (
@@ -60,7 +60,7 @@ const FeaturesTiles = ({
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
 
-           <FeaturesTilesCard 
+          <FeaturesTilesCard 
               title={'Title'}
               description={'Description'}
               image={ 
@@ -71,7 +71,7 @@ const FeaturesTiles = ({
                   height={64}
                 /> 
               }
-           />
+          />
 
             <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
