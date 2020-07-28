@@ -1,5 +1,5 @@
 {
-  "homepage": "http://chegreyev.github.io/fatman",
+  "homepage": "http://chegreyev.github.io/fatman/",
   "name": "open-react-template",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,7 @@
     "react-scrollable-anchor": "^0.6.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "yarn run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
