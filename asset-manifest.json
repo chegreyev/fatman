@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/fatman/static/css/main.411067f8.chunk.css",
+    "main.js": "/fatman/static/js/main.40f12958.chunk.js",
+    "main.js.map": "/fatman/static/js/main.40f12958.chunk.js.map",
+    "runtime-main.js": "/fatman/static/js/runtime-main.1ed8ba42.js",
+    "runtime-main.js.map": "/fatman/static/js/runtime-main.1ed8ba42.js.map",
+    "static/js/2.bded1eb1.chunk.js": "/fatman/static/js/2.bded1eb1.chunk.js",
+    "static/js/2.bded1eb1.chunk.js.map": "/fatman/static/js/2.bded1eb1.chunk.js.map",
+    "index.html": "/fatman/index.html",
+    "precache-manifest.c5bdd88eeda67aa79254b0803ed781c4.js": "/fatman/precache-manifest.c5bdd88eeda67aa79254b0803ed781c4.js",
+    "service-worker.js": "/fatman/service-worker.js",
+    "static/css/main.411067f8.chunk.css.map": "/fatman/static/css/main.411067f8.chunk.css.map",
+    "static/js/2.bded1eb1.chunk.js.LICENSE.txt": "/fatman/static/js/2.bded1eb1.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/fatman/static/media/illustration-section-02.63d0555d.svg",
+    "static/media/feature-tile-icon-01.svg": "/fatman/static/media/feature-tile-icon-01.0f9928d7.svg",
+    "static/media/feature-tile-icon-02.svg": "/fatman/static/media/feature-tile-icon-02.bd39f304.svg",
+    "static/media/features-split-image-01.png": "/fatman/static/media/features-split-image-01.d9cb99ce.png",
+    "static/media/features-split-image-02.png": "/fatman/static/media/features-split-image-02.3c569239.png",
+    "static/media/features-split-image-03.png": "/fatman/static/media/features-split-image-03.87e4d053.png",
+    "static/media/logo.svg": "/fatman/static/media/logo.2810a88b.svg",
+    "static/media/video-placeholder.jpg": "/fatman/static/media/video-placeholder.a622fc5d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1ed8ba42.js",
+    "static/js/2.bded1eb1.chunk.js",
+    "static/css/main.411067f8.chunk.css",
+    "static/js/main.40f12958.chunk.js"
+  ]
+}
