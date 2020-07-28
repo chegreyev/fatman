@@ -6,8 +6,8 @@ import Image from '../elements/Image'
 // list of items
 const list = [
     { name: 'Алишер Серикбаевич' },
-    { name: 'Учитель Учительский' },
-    { name: 'Учитель Учительский' },
+    { name: 'Учитель1' },
+    { name: 'Учитель2' },
 ];
 
 // One item component
@@ -98,8 +98,8 @@ render() {
                     </div>
                     <ScrollMenu
                         data={menu}
-                        arrowLeft={ArrowLeft}
-                        arrowRight={ArrowRight}
+                        // arrowLeft={ArrowLeft}
+                        // arrowRight={ArrowRight}
                         selected={selected}
                         onSelect={this.onSelect}
                         transition={4}
