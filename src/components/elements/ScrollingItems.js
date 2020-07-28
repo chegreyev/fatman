@@ -1,43 +1,50 @@
 import React, { Component } from 'react';
 import ScrollMenu from 'react-horizontal-scrolling-menu';
+import SectionHeader from '../sections/partials/SectionHeader';
 
+import Image from '../elements/Image'
 // list of items
 const list = [
-    { name: 'item1' },
-    { name: 'item2' },
-    { name: 'item3' },
-    { name: 'item4' },
-    { name: 'item5' },
-    { name: 'item6' },
-    { name: 'item7' },
-    { name: 'item8' },
-    { name: 'item9' },
-    { name: 'item10' },
-    { name: 'item11' },
-    { name: 'item12' },
-    { name: 'item13' },
-    { name: 'item14' },
-    { name: 'item15' },
-    { name: 'item16' },
-    { name: 'item17' },
-    { name: 'item18' }
+    { name: 'Алишер Серикбаевич' },
+    { name: 'Учитель Учительский' },
+    { name: 'Учитель Учительский' },
 ];
 
 // One item component
 // selected prop will be passed
-const MenuItem = ({text, selected}) => {
-    return <div
-        className={`menu-item ${selected ? 'active' : ''}`}
-    >{text}</div>;
-};
 
+// const MenuItem = ({text, selected}) => {
+//     return <div
+//         className={`menu-item ${selected ? 'active' : ''}`}
+//     >{text}</div>;
+// };
+
+const MenuCardItem = ({text , selected}) => {
+    return (
+        <div className="card">
+            <div className={`menu-item ${selected ? 'active' : ''}`}>
+                <div className="card-container">
+                    <Image 
+                        className="card-image"
+                        src={require('./../../assets/images/img_avatar.png')}
+                        alt="card-teacher"
+                        width={350}
+                        height={299}
+                    />
+                    <h4><b>{text}</b></h4>
+                    <p>Учитель математики</p>
+                </div>
+            </div>
+        </div>
+    )
+}
 // All items component
 // Important! add unique key
 export const Menu = (list, selected) =>
     list.map(el => {
         const {name} = el;
 
-        return <MenuItem text={name} key={name} selected={selected} />;
+        return <MenuCardItem text={name} key={name} selected={selected} />;
 });
 
 
@@ -78,9 +85,17 @@ render() {
     // Create menu from items
     const menu = this.menuItems;
 
+    const sectionHeader ={
+        title: 'Наши учителя',
+        paragrapgh: 'Текст'
+    }
+
     return (
             <div className="container">
-                <div className="has-top-divider section-inner">
+                <div className="has-top-divider section-inner has-bottom-divider">
+                    <div>
+                        <SectionHeader data={sectionHeader} className="center-content" />
+                    </div>
                     <ScrollMenu
                         data={menu}
                         arrowLeft={ArrowLeft}
