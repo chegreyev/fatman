@@ -8,6 +8,18 @@ const list = [
     { name: 'Алишер Серикбаевич' },
     { name: 'Учитель1' },
     { name: 'Учитель2' },
+    { name: 'Учитель3' },
+    { name: 'Учитель4' },
+    { name: 'Учитель5' },
+    { name: 'Учитель6' },
+    { name: 'Учитель7' },
+    { name: 'Учитель8' },
+    { name: 'Учитель9' },
+    { name: 'Учитель10' },
+    { name: 'Учитель11' },
+    { name: 'Учитель12' },
+    { name: 'Учитель13' },
+    { name: 'Учитель13' },
 ];
 
 // One item component
@@ -98,11 +110,11 @@ render() {
                     </div>
                     <ScrollMenu
                         data={menu}
-                        // arrowLeft={ArrowLeft}
-                        // arrowRight={ArrowRight}
+                        arrowLeft={ArrowLeft}
+                        arrowRight={ArrowRight}
                         selected={selected}
                         onSelect={this.onSelect}
-                        transition={4}
+                        transition={2}
                     />
                 </div>
             </div>
