@@ -30,6 +30,7 @@
 	.header-nav-inner {
 		display: flex;
 		flex-grow: 1;
+		padding-bottom: 5px;
 	}
 
     ul {
@@ -148,5 +149,22 @@
 
 	.site-header-inner {
 		height: $header-height__desktop;
+	}
+}
+
+.header-nav {
+	padding-top: 5px;
+
+	a {
+		display: flex;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		white-space: nowrap;
+		margin-bottom: 0;
 	}
 }

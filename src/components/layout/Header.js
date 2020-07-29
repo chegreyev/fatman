@@ -4,6 +4,8 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
 
+import HeaderNav from './partials/HeaderNav'
+
 const propTypes = {
   navPosition: PropTypes.string,
   hideNav: PropTypes.bool,
@@ -128,6 +130,7 @@ const Header = ({
                     </li>
                   </ul>
                 </div>
+                <HeaderNav topDivider/>
               </nav>
             </>}
         </div>
