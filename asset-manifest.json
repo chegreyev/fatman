@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/fatman/static/css/main.411067f8.chunk.css",
-    "main.js": "/fatman/static/js/main.3794208a.chunk.js",
-    "main.js.map": "/fatman/static/js/main.3794208a.chunk.js.map",
+    "main.js": "/fatman/static/js/main.583eabc1.chunk.js",
+    "main.js.map": "/fatman/static/js/main.583eabc1.chunk.js.map",
     "runtime-main.js": "/fatman/static/js/runtime-main.1ed8ba42.js",
     "runtime-main.js.map": "/fatman/static/js/runtime-main.1ed8ba42.js.map",
     "static/js/2.3a31b778.chunk.js": "/fatman/static/js/2.3a31b778.chunk.js",
     "static/js/2.3a31b778.chunk.js.map": "/fatman/static/js/2.3a31b778.chunk.js.map",
     "index.html": "/fatman/index.html",
-    "precache-manifest.9787f2dade49f0af1fd5643f02f161a6.js": "/fatman/precache-manifest.9787f2dade49f0af1fd5643f02f161a6.js",
+    "precache-manifest.782b1b73c974b9df3b5383a27cf6c578.js": "/fatman/precache-manifest.782b1b73c974b9df3b5383a27cf6c578.js",
     "service-worker.js": "/fatman/service-worker.js",
     "static/css/main.411067f8.chunk.css.map": "/fatman/static/css/main.411067f8.chunk.css.map",
     "static/js/2.3a31b778.chunk.js.LICENSE.txt": "/fatman/static/js/2.3a31b778.chunk.js.LICENSE.txt",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.1ed8ba42.js",
     "static/js/2.3a31b778.chunk.js",
     "static/css/main.411067f8.chunk.css",
-    "static/js/main.3794208a.chunk.js"
+    "static/js/main.583eabc1.chunk.js"
   ]
 }
