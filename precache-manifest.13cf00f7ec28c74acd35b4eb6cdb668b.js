@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5c087e8ffd7215b81c7d597d6940a6e8",
+    "revision": "5a7b3a7efa2adcf5b097b93d41ad058b",
     "url": "/fatman/index.html"
   },
   {
-    "revision": "bbd6486da46dd7c1722f",
-    "url": "/fatman/static/css/main.222ff588.chunk.css"
+    "revision": "270e26b741b46d2fe44b",
+    "url": "/fatman/static/css/main.1997e331.chunk.css"
   },
   {
-    "revision": "50bf97ecdfb0e9b72ff3",
-    "url": "/fatman/static/js/2.76591baa.chunk.js"
+    "revision": "6d6d1e33b79598c9a84a",
+    "url": "/fatman/static/js/2.6ad9f7d1.chunk.js"
   },
   {
     "revision": "117d65892edc8adcd29d4a0d57b5a80a",
-    "url": "/fatman/static/js/2.76591baa.chunk.js.LICENSE.txt"
+    "url": "/fatman/static/js/2.6ad9f7d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bbd6486da46dd7c1722f",
-    "url": "/fatman/static/js/main.f8d8b7b7.chunk.js"
+    "revision": "270e26b741b46d2fe44b",
+    "url": "/fatman/static/js/main.4e3160fe.chunk.js"
   },
   {
     "revision": "0578576f375dab57a446",
