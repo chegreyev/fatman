@@ -4,6 +4,17 @@ import classNames from 'classnames';
 import { SectionProps } from '../../utils/SectionProps';
 import Input from '../elements/Input';
 
+// Button
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  button: {
+    margin: theme.spacing(1),
+  },
+}))
+
+
 const propTypes = {
   ...SectionProps.types,
   split: PropTypes.bool
@@ -25,6 +36,8 @@ const Cta = ({
   split,
   ...props
 }) => {
+
+  const classes = useStyles()
 
   const outerClasses = classNames(
     'cta section center-content-mobile reveal-from-bottom',
@@ -74,6 +87,16 @@ const Cta = ({
                 <path d="M9 5H1c-.6 0-1 .4-1 1s.4 1 1 1h8v5l7-6-7-6v5z" fill="#376DF9" />
               </svg>
             </Input>
+
+            <Button
+              variant="contained"
+              size="small"
+              color="primary"
+              className={classes.button}
+              // disabled
+            >
+              Записаться
+            </Button>
           </div>
         </div>
       </div>

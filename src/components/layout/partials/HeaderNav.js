@@ -1,6 +1,5 @@
 import React from 'react'
 import classNames from 'classnames'
-import {Link} from 'react-router-dom'
 
 const HeaderNav = ({
     className,
@@ -45,7 +44,7 @@ const HeaderNav = ({
                         xmlns="http://www.w3.org/2000/svg">
                         <title>Instagram</title>
                         <g>
-                            <circle cx="12.145" cy="3.892" r="1" />
+                            {/* <circle cx="12.145" cy="3.892" r="1" /> */}
                             <path
                             d="M8 12c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" />
                             <path
