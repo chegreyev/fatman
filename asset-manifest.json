@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/fatman/static/css/main.1997e331.chunk.css",
-    "main.js": "/fatman/static/js/main.4e3160fe.chunk.js",
-    "main.js.map": "/fatman/static/js/main.4e3160fe.chunk.js.map",
+    "main.js": "/fatman/static/js/main.cf1db405.chunk.js",
+    "main.js.map": "/fatman/static/js/main.cf1db405.chunk.js.map",
     "runtime-main.js": "/fatman/static/js/runtime-main.1ed8ba42.js",
     "runtime-main.js.map": "/fatman/static/js/runtime-main.1ed8ba42.js.map",
-    "static/js/2.6ad9f7d1.chunk.js": "/fatman/static/js/2.6ad9f7d1.chunk.js",
-    "static/js/2.6ad9f7d1.chunk.js.map": "/fatman/static/js/2.6ad9f7d1.chunk.js.map",
+    "static/js/2.d5cf4e14.chunk.js": "/fatman/static/js/2.d5cf4e14.chunk.js",
+    "static/js/2.d5cf4e14.chunk.js.map": "/fatman/static/js/2.d5cf4e14.chunk.js.map",
     "index.html": "/fatman/index.html",
-    "precache-manifest.13cf00f7ec28c74acd35b4eb6cdb668b.js": "/fatman/precache-manifest.13cf00f7ec28c74acd35b4eb6cdb668b.js",
+    "precache-manifest.6f4e03985b11bc32ce71413f76d4f235.js": "/fatman/precache-manifest.6f4e03985b11bc32ce71413f76d4f235.js",
     "service-worker.js": "/fatman/service-worker.js",
     "static/css/main.1997e331.chunk.css.map": "/fatman/static/css/main.1997e331.chunk.css.map",
-    "static/js/2.6ad9f7d1.chunk.js.LICENSE.txt": "/fatman/static/js/2.6ad9f7d1.chunk.js.LICENSE.txt",
+    "static/js/2.d5cf4e14.chunk.js.LICENSE.txt": "/fatman/static/js/2.d5cf4e14.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/fatman/static/media/illustration-section-02.63d0555d.svg",
     "static/media/feature-tile-icon-01.svg": "/fatman/static/media/feature-tile-icon-01.0f9928d7.svg",
     "static/media/feature-tile-icon-02.svg": "/fatman/static/media/feature-tile-icon-02.bd39f304.svg",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.1ed8ba42.js",
-    "static/js/2.6ad9f7d1.chunk.js",
+    "static/js/2.d5cf4e14.chunk.js",
     "static/css/main.1997e331.chunk.css",
-    "static/js/main.4e3160fe.chunk.js"
+    "static/js/main.cf1db405.chunk.js"
   ]
 }
