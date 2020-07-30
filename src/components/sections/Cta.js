@@ -93,7 +93,8 @@ const Cta = ({
               size="small"
               color="primary"
               className={classes.button}
-              // disabled
+              disabled={false}
+              onClick={() => { alert('Ваша заявка на пробный урок отправлена !') }}
             >
               Записаться
             </Button>
