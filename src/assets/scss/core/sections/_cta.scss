@@ -35,3 +35,16 @@
 		}
 	}
 }
+
+.error-message {
+	color: #bf1650;
+	margin-bottom: 5px;
+	font-family: "Inter" , sans-serif;
+	font-size: 18px;
+	letter-spacing: -0.1px;
+}
+
+.error-message::before {
+	display: inline;
+	content: "⚠ ";
+  }
