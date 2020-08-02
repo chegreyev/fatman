@@ -79,7 +79,7 @@ const Cta = ({
 									required: "Почта обязательна",
 									pattern: {
 										value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-										message: "Invalid email address"
+										message: "Неправильный адрес email"
 									}
 								})}	
 							/>
@@ -143,7 +143,7 @@ const Cta = ({
 								/>
 							</svg>
 						</div>
-						<input type="submit"/>
+						<input type="submit" value="Записаться"/>
 					</form>
 				</div>
 				</>
