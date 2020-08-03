@@ -55,7 +55,7 @@ const Cta = ({
 		changeSubscibeStatus(true);
 		console.log(values);
 
-		axios.post('https://29947508f532.ngrok.io/api/v1/clients/' , {values} )
+		axios.post('https://354175e45188.ngrok.io/' , {values} )
 	};
 
 	const gradeValidation = (grade) => grade >= 1 && grade <= 11;
