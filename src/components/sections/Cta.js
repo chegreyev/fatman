@@ -143,7 +143,7 @@ const Cta = ({
 								/>
 							</svg>
 						</div>
-						<input type="submit" value="Записаться"/>
+						<input className="submit-input-form" type="submit" value="Записаться"/>
 					</form>
 				</div>
 				</>

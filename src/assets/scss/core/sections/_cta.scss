@@ -48,3 +48,29 @@
 	display: inline;
 	content: "⚠ ";
 }
+
+.submit-input-form {
+	font-family: "Inter" , sans-serif;
+	background-color: #4CAF50; /* Green */
+
+	border-radius: 4px;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+	padding: 10px;
+	width: 180px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.submit-input-form:hover {
+	background-color: #3e8e41
+}
+
+.submit-input-form:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
