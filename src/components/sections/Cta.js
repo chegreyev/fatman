@@ -7,6 +7,9 @@ import { SectionProps } from "../../utils/SectionProps";
 // React Hook form
 import { useForm } from "react-hook-form"
 
+// axios
+import axios from 'axios'
+
 const propTypes = {
 	...SectionProps.types,
 	split: PropTypes.bool,
@@ -51,6 +54,8 @@ const Cta = ({
 	const Subscribe = values => {
 		changeSubscibeStatus(true);
 		console.log(values);
+
+		axios.post('http://localhost:5000/' , {values} )
 	};
 
 	const gradeValidation = (grade) => grade >= 1 && grade <= 11;
