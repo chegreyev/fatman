@@ -55,7 +55,7 @@ const Cta = ({
 		changeSubscibeStatus(true);
 		console.log(values);
 
-		axios.post('http://localhost:5000/' , {values} )
+		// axios.post('http://localhost:5000/' , {values} )
 	};
 
 	const gradeValidation = (grade) => grade >= 1 && grade <= 11;
