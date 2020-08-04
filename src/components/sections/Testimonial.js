@@ -44,8 +44,8 @@ const Testimonial = ({
   );
 
   const sectionHeader = {
-    title: 'Отзывы',
-    paragraph: 'Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus—in ornare.'
+    title: 'Пікірлер',
+    paragraph: 'Тұтынушыларға қызмет көрсету — брендтің жүрегін тұтынушылардың жүрегіне жеткізеді (Кейт Нассер)'
   };
 
   return (

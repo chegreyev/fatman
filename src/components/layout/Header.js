@@ -114,19 +114,19 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#about">О нас</Link>
+                      <Link to="#about">Біз туралы</Link>
                     </li>
                     <li>
-                      <Link to="#mission">Наша миссия</Link>
+                      <Link to="#mission">Біздің міндетіміз</Link>
                     </li>
                     <li>
-                      <Link to="#teachers">Кто такие наши учителя</Link>
+                      <Link to="#teachers">Біздің ұстаздарымыз</Link>
                     </li>
                     <li>
-                      <Link to="#recommendations">Принцип работы</Link>
+                      <Link to="#recommendations">Жұмыс принципі</Link>
                     </li>
                     <li>
-                      <Link to="#contact">Отзывы</Link>
+                      <Link to="#contact">Пікірлер</Link>
                     </li>
                   </ul>
                 </div>

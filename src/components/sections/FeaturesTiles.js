@@ -46,7 +46,7 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: 'Наши услуги',
+    title: 'Біздің қызметтеріміз',
     paragraph: ''
   };
 
@@ -61,8 +61,8 @@ const FeaturesTiles = ({
           <div className={tilesClasses}>
 
           <FeaturesTilesCard 
-              title={'Title'}
-              description={'Description'}
+              title={'Математика'}
+              description={'Матемика пәнінен қазақ және орыс тілдерінде қосымша сабақтар.'}
               image={ 
                 <Image
                   src={require('./../../assets/images/feature-tile-icon-01.svg')}
@@ -74,8 +74,8 @@ const FeaturesTiles = ({
           />
 
           <FeaturesTilesCard 
-              title={'Title'}
-              description={'Description'}
+              title={'Ағылшан тілі'}
+              description={'Ағылшан тілінен қазақ және орыс топтырына сабақтар.'}
               image={ 
                 <Image
                   src={require('./../../assets/images/feature-tile-icon-02.svg')}

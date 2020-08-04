@@ -68,7 +68,7 @@ const Cta = ({
 			{!isSubscibed ? (
 				<>
 				<div className="cta-slogan">
-					<h3 className="m-0">Записаться на пробный урок</h3>
+					<h3 className="m-0">Тегін сабаққа жазылу</h3>
 				</div>
 				<div className="cta-action">
 					<form onSubmit={handleSubmit(Subscribe)}>
@@ -81,10 +81,10 @@ const Cta = ({
 								name="email" 
 								placeholder="email"
 								ref={register({
-									required: "Почта обязательна",
+									required: "Пошта қажет",
 									pattern: {
 										value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-										message: "Неправильный адрес email"
+										message: "Электрондық пошта жарамсыз"
 									}
 								})}	
 							/>
@@ -107,9 +107,9 @@ const Cta = ({
 							<input 
 								className="form-input" 
 								name="name" 
-								placeholder="ФИО"
+								placeholder="Аты-жөні"
 								ref={register({
-									required: "Введите ваше ФИО"
+									required: "Аты-жөніңізді енгізіңіз"
 								})}	
 							/>
 							<svg
@@ -125,15 +125,15 @@ const Cta = ({
 						</div>
 
 						{
-							errors.grade && <p className="error-message">{errors.grade.message}</p> && <p className="error-message">Неправильный класс</p>
+							errors.grade && <p className="error-message">{errors.grade.message}</p> && <p className="error-message">Қате оқу сыныбы</p>
 						}
 						<div className="has-icon-left">
 							<input 
 								className="form-input" 
 								name="grade" 
-								placeholder="Класс ребенка"
+								placeholder="Баланың сыныбы"
 								ref={register({
-									required: "Введите класс обучения",
+									required: "Оқу сыныбыны жазіңіз",
 									validate: gradeValidation
 								})}	
 							/>
@@ -148,13 +148,13 @@ const Cta = ({
 								/>
 							</svg>
 						</div>
-						<input className="submit-input-form" type="submit" value="Записаться"/>
+						<input className="submit-input-form" type="submit" value="Тіркелу"/>
 					</form>
 				</div>
 				</>
 			) : (
 				<div className="cta-slogan">
-					<h3 className="m-0">Вы успешно записались на пробный урок !</h3>
+					<h3 className="m-0">Сіз сынақ сабағына сәтті жазылдыңыз!</h3>
 				</div>
 			)}
 			</div>
