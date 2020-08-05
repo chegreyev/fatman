@@ -98,7 +98,7 @@ render() {
     const menu = this.menuItems;
 
     const sectionHeader ={
-        title: 'Наши учителя',
+        title: 'Біздің мұғалімдер',
         paragrapgh: 'Текст'
     }
 
