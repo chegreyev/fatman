@@ -60,11 +60,11 @@ const FeaturesSplit = ({
       className={outerClasses}
     >
       <div className="container">
-        <div className={innerClasses}>
+        <div className={innerClasses} id="about" >
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={splitClasses}>
 
-            <div className="split-item">
+            <div className="split-item" id="mission" >
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Fenomen
@@ -90,13 +90,13 @@ const FeaturesSplit = ({
               </div>
             </div>
 
-            <div className="split-item">
+            <div className="split-item" id="teachers" >
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Fenomen
                 </div>
                 <h3 className="mt-0 mb-12">
-                  Біздің мұғалімдер
+                  Біздің ұстаздарымыз
                 </h3>
                 <p className="m-0">
                 Академия мұғалімдері математика және ағылшын тілін оқытуда сіздерге ерекше  бағдарламаларды ұсынады. Түрлі форматтар мен курстар тіпті ең талапшыл оқушыны да таң қалдырарлығы сөзсіз. XXI ғасыр талаптарына сай жұмыс атқаратын жоғары білікті мұғалімдер тобы оқу процесін жеңіл әрі қызықты етеді.
@@ -116,7 +116,7 @@ const FeaturesSplit = ({
               </div>
             </div>
 
-            <div className="split-item">
+            <div className="split-item" id="recommendations" >
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Fenomen
