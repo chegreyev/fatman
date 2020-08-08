@@ -73,18 +73,18 @@ const Cta = ({
 				<div className="cta-action">
 					<form onSubmit={handleSubmit(Subscribe)}>
 						{
-							errors.email && <p className="error-message">{errors.email.message}</p>
+							errors.phone && <p className="error-message">{errors.phone.message}</p>
 						}
 						<div className="has-icon-left">
 							<input 
 								className="form-input" 
-								name="email" 
-								placeholder="email"
+								name="phone" 
+								placeholder="Телефон нөмірі"
 								ref={register({
-									required: "Пошта қажет",
+									required: "Телефон нөмірі керек",
 									pattern: {
-										value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-										message: "Электрондық пошта жарамсыз"
+										value:/^[+7]?[(]?[0-9]{3}[)]?[-\s]?[0-9]{3}[-\s]?[0-9]{5}$/im,
+										message: "Қате телефон нөмірі"
 									}
 								})}	
 							/>
