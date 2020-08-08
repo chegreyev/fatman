@@ -1,7 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-import Image from '../../elements/Image';
 
 const Logo = ({
   className,
@@ -20,11 +19,18 @@ const Logo = ({
     >
       <h1 className="m-0">
         <Link to="/">
-          <Image
-            src={require('./../../../assets/images/logo.svg')}
+          {/* <Image
+            src={require('./../../../assets/images/logo-fatman.jpg')}
             alt="Open"
-            width={32}
-            height={32} />
+            width={64}
+            height={64} /> */}
+            <img 
+              src={require('./../../../assets/images/logo-fatman.jpg')}
+              alt="Logo"
+              width={75}
+              height={75}
+              className="logo"
+            />
         </Link>
       </h1>
     </div>
