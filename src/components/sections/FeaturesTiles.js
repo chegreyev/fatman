@@ -74,8 +74,8 @@ const FeaturesTiles = ({
           />
 
           <FeaturesTilesCard 
-              title={'Ағылшан тілі'}
-              description={'Ағылшан тілінен қазақ және орыс топтырына сабақтар.'}
+              title={'Ағылшын тілі'}
+              description={'Ағылшын тілінен қазақ және орыс топтырына сабақтар.'}
               image={ 
                 <Image
                   src={require('./../../assets/images/feature-tile-icon-02.svg')}

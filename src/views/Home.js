@@ -14,7 +14,7 @@ const Home = () => {
       <FeaturesTiles />
       <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
       <ScrollingItems />
-      <Testimonial topDivider />
+      {/* <Testimonial topDivider /> */}
     </>
   );
 }
