@@ -62,7 +62,7 @@ const FeaturesTiles = ({
 
           <FeaturesTilesCard 
               title={'Математика'}
-              description={'Матемика пәнінен қазақ және орыс тілдерінде қосымша сабақтар.'}
+              description={'Математика пәнінен қазақ және орыс тілдерінде қосымша сабақтар.'}
               image={ 
                 <Image
                   src={require('./../../assets/images/feature-tile-icon-01.svg')}
