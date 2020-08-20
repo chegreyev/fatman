@@ -3,23 +3,28 @@ import ScrollMenu from 'react-horizontal-scrolling-menu';
 import SectionHeader from '../sections/partials/SectionHeader';
 
 import Image from '../elements/Image'
+
+import Teacher1 from '../../assets/images/teacher_1.jpg'
+import Teacher2 from '../../assets/images/teacher_2.jpg'
+import Teacher3 from '../../assets/images/teacher_3.jpg'
+
 // list of items
 const list = [
-    { name: 'Алишер Серикбаевич' },
-    { name: 'Учитель1' },
-    { name: 'Учитель2' },
-    { name: 'Учитель3' },
-    { name: 'Учитель4' },
-    { name: 'Учитель5' },
-    { name: 'Учитель6' },
-    { name: 'Учитель7' },
-    { name: 'Учитель8' },
-    { name: 'Учитель9' },
-    { name: 'Учитель10' },
-    { name: 'Учитель11' },
-    { name: 'Учитель12' },
-    { name: 'Учитель13' },
-    { name: 'Учитель14' },
+    {
+        name: 'Алишер Серикбаевич',
+        image: Teacher1,
+        subject: "Математика пәнінің мұғалімі"
+    },
+    { 
+        name: 'Абдулла Несібелі',
+        image: Teacher2,
+        subject: "Ағылшын тілі пәнінің мұғалімі"
+    },
+    { 
+        name: 'Тукубаева Камила',
+        image: Teacher3,
+        subject: "Математика пәнінің мұғалімі"
+    },
 ];
 
 // One item component
@@ -31,20 +36,29 @@ const list = [
 //     >{text}</div>;
 // };
 
-const MenuCardItem = ({text , selected}) => {
+const MenuCardItem = ({
+    text,
+    image,
+    subject,
+    selected
+}) => {
     return (
         <div className="card">
-            <div className={`menu-item ${selected ? 'active' : ''}`}>
+            <div className={`menu-item ${selected ? '' : 'active'}`}>
                 <div className="card-container">
                     <Image 
                         className="card-image"
-                        src={require('./../../assets/images/img_avatar.png')}
+                        src={image}
                         alt="card-teacher"
-                        width={350}
-                        height={299}
                     />
-                    <h4><b>{text}</b></h4>
-                    <p>Учитель математики</p>
+                    <h4 className="card__name">
+                        <b>
+                            {text}
+                        </b>
+                    </h4>
+                    <p className="card__desc">
+                        {subject}
+                    </p>
                 </div>
             </div>
         </div>
@@ -54,9 +68,9 @@ const MenuCardItem = ({text , selected}) => {
 // Important! add unique key
 export const Menu = (list, selected) =>
     list.map(el => {
-        const {name} = el;
+        const {name , image , subject} = el;
 
-        return <MenuCardItem text={name} key={name} selected={selected} />;
+        return <MenuCardItem subject={subject} image={image} text={name} key={name} selected={selected} />;
 });
 
 

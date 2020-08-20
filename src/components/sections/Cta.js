@@ -55,7 +55,7 @@ const Cta = ({
 		changeSubscibeStatus(true);
 		console.log(values);
 
-		axios.post('https://morning-spire-15849.herokuapp.com/' , {values} )
+		axios.post('https://fenomen.s20.online/api/1/lead/create?token=c4ca4238a0b923820dcc509a6f75849b' , {values} )
 	};
 
 	const gradeValidation = (grade) => grade >= 1 && grade <= 11;

@@ -92,10 +92,13 @@ const Hero = ({
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
+            closeHidden
           >
-              <ReactPlayer
-                url="https://www.youtube.com/watch?v=N2PFwCvcyQ8"
-              />
+            <ReactPlayer
+              url="https://youtu.be/TniSaDLtdHk"
+              className="react-player"
+              controls
+            />
           </Modal>
         </div>
       </div>
