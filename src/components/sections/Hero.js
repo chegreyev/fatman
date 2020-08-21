@@ -97,6 +97,8 @@ const Hero = ({
             <ReactPlayer
               url="https://youtu.be/TniSaDLtdHk"
               className="react-player"
+              width={896}
+              height={504}
               controls
             />
           </Modal>

@@ -74,19 +74,19 @@ export const Menu = (list, selected) =>
 });
 
 
-const Arrow = ({ text, className }) => {
-    return (
-        <div
-            className={className}
-        >
-            {text}
-        </div>
-    );
-};
+// const Arrow = ({ text, className }) => {
+//     return (
+//         <div
+//             className={className}
+//         >
+//             {text}
+//         </div>
+//     );
+// };
 
 
-const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
-const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
+// const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
+// const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
 
 const selected = 'item1';
 
@@ -124,8 +124,8 @@ render() {
                     </div>
                     <ScrollMenu
                         data={menu}
-                        arrowLeft={ArrowLeft}
-                        arrowRight={ArrowRight}
+                        // arrowLeft={ArrowLeft}
+                        // arrowRight={ArrowRight}
                         selected={selected}
                         onSelect={this.onSelect}
                         transition={2}
