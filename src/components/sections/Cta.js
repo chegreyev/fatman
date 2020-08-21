@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form"
 
 // axios
 import axios from 'axios'
+import FormData from 'form-data'
 
 const propTypes = {
 	...SectionProps.types,
@@ -53,12 +54,27 @@ const Cta = ({
 
 	const Subscribe = values => {
 		changeSubscibeStatus(true);
-		console.log(values);
 
-		axios.post('https://fenomen.s20.online/api/1/lead/create?token=c4ca4238a0b923820dcc509a6f75849b' , {values} )
+
+		const data = new FormData();
+		data.append('name', values['name']);
+		data.append('phone', values['phone']);
+		data.append('note', values['note']);
+
+		const config = {
+		method: 'post',
+		url: 'https://fenomen.s20.online/api/1/lead/create?token=c4ca4238a0b923820dcc509a6f75849b',
+		headers: {
+			'Content-Type': 'multipart/form-data'
+		},
+		data : data
+		};
+
+axios(config)
+
 	};
 
-	const gradeValidation = (grade) => grade >= 1 && grade <= 11;
+	const gradeValidation = (grade) => grade >= 1 && grade <= 12;
 	
 
 	return (
@@ -125,12 +141,12 @@ const Cta = ({
 						</div>
 
 						{
-							errors.grade && <p className="error-message">{errors.grade.message}</p> && <p className="error-message">Қате оқу сыныбы</p>
+							errors.note && <p className="error-message">{errors.note.message}</p> && <p className="error-message">Қате оқу сыныбы</p>
 						}
 						<div className="has-icon-left">
 							<input 
 								className="form-input" 
-								name="grade" 
+								name="note" 
 								placeholder="Баланың сыныбы"
 								ref={register({
 									required: "Оқу сыныбыны жазіңіз",
