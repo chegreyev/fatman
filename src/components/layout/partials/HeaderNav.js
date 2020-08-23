@@ -37,7 +37,7 @@ const HeaderNav = ({
                 </li>
 
                 <li>
-                    <a href="https://www.instagram.com/teacher.alish/">
+                    <a href="https://instagram.com/fenomen_edu?igshid=1oyqqfvoxqodf">
                         <svg
                         width="16"
                         height="16"

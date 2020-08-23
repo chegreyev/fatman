@@ -132,7 +132,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../assets/images/working-process.png')}
+                  src={require('./../../assets/images/working-process.jpg')}
                   alt="Features split 03"
                   width={528}
                   height={396} />
