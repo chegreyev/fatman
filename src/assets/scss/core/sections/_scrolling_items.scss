@@ -1,5 +1,5 @@
 .menu-item {
-    padding: 0 40px;
+    padding: 0 20px;
     margin: 5px 10px;
     user-select: none;
     cursor: pointer;
@@ -23,9 +23,10 @@
 
 .card-image {
     padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 5px 5px 0 0;
-    width: 350px;
-    height: 457px;
+    width: 400px;
+    height: 750px;
     object-fit: cover;
 }
 

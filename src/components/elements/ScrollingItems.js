@@ -4,42 +4,28 @@ import SectionHeader from '../sections/partials/SectionHeader';
 
 import Image from '../elements/Image'
 
-import Teacher1 from '../../assets/images/teacher_1.jpg'
-import Teacher2 from '../../assets/images/teacher_2.jpg'
-import Teacher3 from '../../assets/images/teacher_3.jpg'
+import Review1 from '../../assets/images/review-1.jpg'
+import Review2 from '../../assets/images/review-2.png'
+import Review3 from '../../assets/images/review-3.jpg'
 
 // list of items
 const list = [
-    {
-        name: 'Алишер Серикбаевич',
-        image: Teacher1,
-        subject: "Математика пәнінің мұғалімі"
+    {   
+        name: "review1",
+        image: Review1,
     },
     { 
-        name: 'Абдулла Несібелі',
-        image: Teacher2,
-        subject: "Ағылшын тілі пәнінің мұғалімі"
+        name: "review2",
+        image: Review2,
     },
     { 
-        name: 'Тукубаева Камила',
-        image: Teacher3,
-        subject: "Математика пәнінің мұғалімі"
+        name: "review3",
+        image: Review3,
     },
 ];
 
-// One item component
-// selected prop will be passed
-
-// const MenuItem = ({text, selected}) => {
-//     return <div
-//         className={`menu-item ${selected ? 'active' : ''}`}
-//     >{text}</div>;
-// };
-
 const MenuCardItem = ({
-    text,
     image,
-    subject,
     selected
 }) => {
     return (
@@ -51,14 +37,6 @@ const MenuCardItem = ({
                         src={image}
                         alt="card-teacher"
                     />
-                    <h4 className="card__name">
-                        <b>
-                            {text}
-                        </b>
-                    </h4>
-                    <p className="card__desc">
-                        {subject}
-                    </p>
                 </div>
             </div>
         </div>
@@ -68,25 +46,10 @@ const MenuCardItem = ({
 // Important! add unique key
 export const Menu = (list, selected) =>
     list.map(el => {
-        const {name , image , subject} = el;
+        const {name , image} = el;
 
-        return <MenuCardItem subject={subject} image={image} text={name} key={name} selected={selected} />;
+        return <MenuCardItem image={image} key={name} selected={selected} />;
 });
-
-
-// const Arrow = ({ text, className }) => {
-//     return (
-//         <div
-//             className={className}
-//         >
-//             {text}
-//         </div>
-//     );
-// };
-
-
-// const ArrowLeft = Arrow({ text: '<', className: 'arrow-prev' });
-// const ArrowRight = Arrow({ text: '>', className: 'arrow-next' });
 
 const selected = 'item1';
 
@@ -112,20 +75,18 @@ render() {
     const menu = this.menuItems;
 
     const sectionHeader ={
-        title: 'Біздің мұғалімдер',
+        title: 'Пікірлер',
         paragrapgh: 'Текст'
     }
 
     return (
-            <div className="container">
+            <div className="container" id="contact">
                 <div className="has-top-divider section-inner has-bottom-divider">
                     <div>
                         <SectionHeader data={sectionHeader} className="center-content" />
                     </div>
                     <ScrollMenu
                         data={menu}
-                        // arrowLeft={ArrowLeft}
-                        // arrowRight={ArrowRight}
                         selected={selected}
                         onSelect={this.onSelect}
                         transition={2}
