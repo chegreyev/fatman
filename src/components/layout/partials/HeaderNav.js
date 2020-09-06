@@ -1,6 +1,9 @@
 import React from 'react'
 import classNames from 'classnames'
 
+import KZ from '../../../assets/images/kazakhstan-flag.png'
+import RU from '../../../assets/images/russian-flag.png'
+
 const HeaderNav = ({
     className,
     topDivider,
@@ -53,6 +56,19 @@ const HeaderNav = ({
                         </g>
                         </svg>
                     </a>
+                </li>
+                {/* <li>
+                    <div className="language-selector">
+                        <img src={KZ} alt="flag" className="flag-header" />
+                        <input className="check" type="checkbox" />
+                        <img src={RU} alt="flag" className="flag-header" />
+                    </div>
+                </li> */}
+                <li>
+                    <img src={KZ} alt="flag" className="flag-header" />
+                </li>
+                <li>
+                    <img src={RU} alt="flag" className="flag-header" />
                 </li>
 
             </ul>
