@@ -9,6 +9,9 @@ import * as serviceWorker from './serviceWorker';
 //import './App.css';
 import './assets/scss/style.scss';
 
+// Translations
+import './i18n';
+
 const history = createBrowserHistory();
 
 ReactDOM.render(
