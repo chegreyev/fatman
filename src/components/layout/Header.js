@@ -5,6 +5,9 @@ import classNames from 'classnames';
 import { HashLink as Link } from 'react-router-hash-link';
 import Logo from './partials/Logo';
 
+// the hook
+import { useTranslation } from 'react-i18next';
+
 import HeaderNav from './partials/HeaderNav'
 
 const propTypes = {
@@ -32,7 +35,7 @@ const Header = ({
   bottomDivider,
   ...props
 }) => {
-
+  const { t, i18n } = useTranslation();
   const [isActive, setIsactive] = useState(false);
 
   const nav = useRef(null);
@@ -115,19 +118,19 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#about">Біз туралы</Link>
+                      <Link to="#about">{t('headerAbout')}</Link>
                     </li>
                     <li>
-                      <Link to="#mission">Біздің міндетіміз</Link>
+                      <Link to="#mission">{t('headerMission')}</Link>
                     </li>
                     <li>
-                      <Link to="#teachers">Біздің ұстаздарымыз</Link>
+                      <Link to="#teachers">{t('headerTeachers')}</Link>
                     </li>
                     <li>
-                      <Link to="#recommendations">Жұмыс принципі</Link>
+                      <Link to="#recommendations">{t('headerRecommendations')}</Link>
                     </li>
                     <li>
-                      <Link to="#contact">Пікірлер</Link>
+                      <Link to="#contact">{t('headerContact')}</Link>
                     </li>
                   </ul>
                 </div>

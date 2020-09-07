@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 
+// the hook
+import { useTranslation } from 'react-i18next';
 
 // React Hook form
 import { useForm } from "react-hook-form"
@@ -51,6 +53,7 @@ const Cta = ({
 
 	let [isSubscibed, changeSubscibeStatus] = useState(false);
 	const { handleSubmit, register, errors } = useForm()
+	const { t, i18n } = useTranslation();
 
 	const Subscribe = values => {
 		changeSubscibeStatus(true);
@@ -84,23 +87,23 @@ axios(config)
 			{!isSubscibed ? (
 				<>
 				<div className="cta-slogan">
-					<h3 className="m-0">Тегін сабаққа жазылу</h3>
+					<h3 className="m-0">{t('ctaTitle')}</h3>
 				</div>
 				<div className="cta-action">
 					<form onSubmit={handleSubmit(Subscribe)}>
 						{
-							errors.phone && <p className="error-message">{errors.phone.message}</p>
+							errors.phone && <p className="error-message">{t('ctaFormPhoneErrorMessage')}</p>
 						}
 						<div className="has-icon-left">
 							<input 
 								className="form-input" 
 								name="phone" 
-								placeholder="Телефон нөмірі"
+								placeholder={t('ctaFormPhonePlaceholder')}
 								ref={register({
-									required: "Телефон нөмірі керек",
+									required: "Телефон нөмірі керек", // wont be used cause of the error message fixed upper
 									pattern: {
 										value:/^[+7]?[(]?[0-9]{3}[)]?[-\s]?[0-9]{3}[-\s]?[0-9]{5}$/im,
-										message: "Қате телефон нөмірі"
+										message: "Қате телефон нөмірі" // wont be used cause of the error message fixed upper
 									}
 								})}	
 							/>
@@ -117,15 +120,15 @@ axios(config)
 						</div>
 
 						{
-							errors.name && <p className="error-message">{errors.name.message}</p>
+							errors.name && <p className="error-message">{t('ctaFormNameErrorRequired')}</p>
 						}
 						<div className="has-icon-left">
 							<input 
 								className="form-input" 
 								name="name" 
-								placeholder="Аты-жөні"
+								placeholder={t('ctaFormNamePlaceholder')}
 								ref={register({
-									required: "Аты-жөніңізді енгізіңіз"
+									required: "Аты-жөніңізді енгізіңіз" // wont be used cause of the error message fixed upper
 								})}	
 							/>
 							<svg
@@ -141,15 +144,15 @@ axios(config)
 						</div>
 
 						{
-							errors.note && <p className="error-message">{errors.note.message}</p> && <p className="error-message">Қате оқу сыныбы</p>
+							errors.note && <p className="error-message">{t('ctaFormNoteErrorRequired')}</p> && <p className="error-message">{t('ctaFormNoteErrorMessage')}</p>
 						}
 						<div className="has-icon-left">
 							<input 
 								className="form-input" 
 								name="note" 
-								placeholder="Баланың сыныбы"
+								placeholder={t('ctaFormNotePlaceholder')}
 								ref={register({
-									required: "Оқу сыныбыны жазіңіз",
+									required: "Оқу сыныбыны жазіңіз", // wont be used cause of the error message fixed upper
 									validate: gradeValidation
 								})}	
 							/>
@@ -164,13 +167,13 @@ axios(config)
 								/>
 							</svg>
 						</div>
-						<input className="submit-input-form" type="submit" value="Тіркелу"/>
+						<input className="submit-input-form" type="submit" value={t('ctaFormSubmitBtn')}/>
 					</form>
 				</div>
 				</>
 			) : (
 				<div className="cta-slogan">
-					<h3 className="m-0">Сіз сынақ сабағына сәтті жазылдыңыз!</h3>
+					<h3 className="m-0">{t('ctaSlogan')}</h3>
 				</div>
 			)}
 			</div>

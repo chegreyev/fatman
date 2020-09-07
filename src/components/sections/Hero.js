@@ -4,6 +4,9 @@ import { SectionProps } from '../../utils/SectionProps';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
 
+// the hook
+import { useTranslation } from 'react-i18next';
+
 import ReactPlayer from "react-player"
 
 import Cta from './Cta'
@@ -28,6 +31,7 @@ const Hero = ({
 }) => {
 
   const [videoModalActive, setVideomodalactive] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const openModal = (e) => {
     e.preventDefault();
@@ -63,11 +67,11 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Онлайн Білім Беру <span className="text-color-primary">Академиясы</span>
+              {t('heroTitlePart1')} <span className="text-color-primary">{t('heroTitlePart2')}</span>
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Бұл заман — білімдінің заманы, білімге бізбен бірге ұмтыл!
+                {t('heroSubtitle')}
               </p>
             </div>
             <Cta split/>

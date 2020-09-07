@@ -1,8 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
+// import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+
+// the hook
+import { useTranslation } from 'react-i18next';
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -27,6 +30,8 @@ const FeaturesSplit = ({
   ...props
 }) => {
 
+  const { t, i18n } = useTranslation();
+  
   const outerClasses = classNames(
     'features-split section',
     topOuterDivider && 'has-top-divider',
@@ -49,10 +54,9 @@ const FeaturesSplit = ({
     alignTop && 'align-top'
   );
 
-  const sectionHeader = {
-    title: 'Біз туралы',
-    paragraph: ''
-  };
+  // const sectionHeader = {
+  //   title: 'Біз туралы',
+  // };
 
   return (
     <section
@@ -61,7 +65,15 @@ const FeaturesSplit = ({
     >
       <div className="container">
         <div className={innerClasses} id="about" >
-          <SectionHeader data={sectionHeader} className="center-content" />
+          {/* <SectionHeader data={sectionHeader} className="center-content" /> */}
+          <div className="center-content section-header" >
+              <div className="container-xs">
+                  <h2 className="mt-0 mb-0">
+                    {t('splitTitle')}
+                  </h2>
+              </div>
+          </div>
+
           <div className={splitClasses}>
 
             <div className="split-item" id="mission" >
@@ -70,10 +82,10 @@ const FeaturesSplit = ({
                   Fenomen
                 </div>
                 <h3 className="mt-0 mb-12">
-                  Біздің миссиямыз 
+                  {t('splitMissionTitle')}
                 </h3>
                 <p className="m-0">
-                  Біз білім беру саласының Феноменіне айналуды көздейміз. Оқушыларымыз тек мектеп пәндері бойынша озып қана қоймай, маңызды дағдыларды да бойына сіңіреді. Ал біз оларды білімнің хақ жолына түсіруге бар күшімізді саламыз.
+                  {t('splitMissionDescr')}
                 </p>
               </div>
               <div className={
@@ -96,10 +108,10 @@ const FeaturesSplit = ({
                   Fenomen
                 </div>
                 <h3 className="mt-0 mb-12">
-                  Біздің ұстаздарымыз
+                  {t('splitTeachersTitle')}
                 </h3>
                 <p className="m-0">
-                Академия мұғалімдері математика және ағылшын тілін оқытуда сіздерге ерекше  бағдарламаларды ұсынады. Түрлі форматтар мен курстар тіпті ең талапшыл оқушыны да таң қалдырарлығы сөзсіз. XXI ғасыр талаптарына сай жұмыс атқаратын жоғары білікті мұғалімдер тобы оқу процесін жеңіл әрі қызықты етеді.
+                  {t('splitTeachersDescr')}
                 </p>
               </div>
               <div className={
@@ -122,7 +134,7 @@ const FeaturesSplit = ({
                   Fenomen
                 </div>
                 <h3 className="mt-0 mb-12">
-                  Жұмыс принципі
+                  {t('splitRecommendationsTitle')}
                 </h3>
               </div>
               <div className={

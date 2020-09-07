@@ -1,8 +1,11 @@
 import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
+// import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
+
+// the hook
+import { useTranslation } from 'react-i18next';
 
 import FeaturesTilesCard from './partials/FeaturesTilesCard'
 
@@ -45,10 +48,12 @@ const FeaturesTiles = ({
     pushLeft && 'push-left'
   );
 
-  const sectionHeader = {
-    title: 'Біздің қызметтеріміз',
-    paragraph: ''
-  };
+  // const sectionHeader = {
+  //   title: 'Біздің қызметтеріміз',
+  //   paragraph: ''
+  // };
+
+  const { t, i18n } = useTranslation();
 
   return (
     <section
@@ -57,12 +62,20 @@ const FeaturesTiles = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
+          {/* <SectionHeader data={sectionHeader} className="center-content" /> */}
+          <div className="center-content section-header" >
+              <div className="container-xs">
+                  <h2 className="mt-0 mb-0">
+                    {t('tilesTitle')}
+                  </h2>
+              </div>
+          </div>
+
           <div className={tilesClasses}>
 
           <FeaturesTilesCard 
-              title={'Математика'}
-              description={'Математика пәнінен қазақ және орыс тілдерінде қосымша сабақтар.'}
+              title={t('tilesCardTitleMath')}
+              description={t('tilesCardDescrMath')}
               image={ 
                 <Image
                   src={require('./../../assets/images/feature-tile-icon-01.svg')}
@@ -74,8 +87,8 @@ const FeaturesTiles = ({
           />
 
           <FeaturesTilesCard 
-              title={'Ағылшын тілі'}
-              description={'Ағылшын тілінен қазақ және орыс топтырына сабақтар.'}
+              title={t('tilesCardTitleEng')}
+              description={t('tilesCardDescrEng')}
               image={ 
                 <Image
                   src={require('./../../assets/images/feature-tile-icon-02.svg')}
