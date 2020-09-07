@@ -57,17 +57,8 @@ const HeaderNav = ({
                         </svg>
                     </a>
                 </li>
-                {/* <li>
-                    <div className="language-selector">
-                        <img src={KZ} alt="flag" className="flag-header" />
-                        <input className="check" type="checkbox" />
-                        <img src={RU} alt="flag" className="flag-header" />
-                    </div>
-                </li> */}
-                <li>
+                <li className="language-selector">
                     <img src={KZ} alt="flag" className="flag-header" />
-                </li>
-                <li>
                     <img src={RU} alt="flag" className="flag-header" />
                 </li>
 
