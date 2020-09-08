@@ -58,6 +58,61 @@ const resources = {
             "splitRecommendationsDescr": "",
             
         }
+    },
+    ru: {
+        translation: {
+            // Header
+            "headerAbout": "О нас",
+            "headerMission": "Наша миссия",
+            "headerTeachers": "Наши учителя",
+            "headerRecommendations": "Принцип работы",
+            "headerContact": "Отзывы",
+
+            // Hero
+            "heroTitlePart1": "Академия Онлайн",
+            "heroTitlePart2": "Образования",
+            "heroSubtitle": "Это век знаний, стремитесь к знаниям вместе с нами!",
+
+            // Cta
+            "ctaTitle": "Записаться на бесплатное тестовое занятие",
+            // Phone
+            "ctaFormPhonePlaceholder": "Номер телефона",
+            "ctaFormPhoneErrorRequired": "Введите номер телефона",
+            "ctaFormPhoneErrorMessage": "Неправильный номер телефона",
+            // Name
+            "ctaFormNamePlaceholder": "Имя Фамилия",
+            "ctaFormNameErrorRequired": "Введите ваше имя",
+            // Note
+            "ctaFormNotePlaceholder": "Класс ребенка",
+            "ctaFormNoteErrorRequired": "Введите класс ребенка",
+            "ctaFormNoteErrorMessage": "Неправильный класс ребенка",
+            //Cta form submit
+            "ctaFormSubmitBtn": "Записаться",
+            // Cta slogan
+            "ctaSlogan": "Вы успешно зарегистрировались на тестовое занятие!",
+
+            // Feature tiles
+            "tilesTitle": "Наши услуши",
+            // TilesCardItem - Math
+            "tilesCardTitleMath": "Математика",
+            "tilesCardDescrMath": "Дополнительные уроки математики на казахском и русском языках.",
+            // TilesCardItem - Eng
+            "tilesCardTitleEng": "Английский язык",
+            "tilesCardDescrEng": "Уроки английского для казахских и русских групп.",
+
+            // Feature split
+            "splitTitle": "О нас",
+            //SplitItem - Mission
+            "splitMissionTitle": "Наша миссия",
+            "splitMissionDescr": "Мы стремимся стать явлением в сфере образования. Наши ученики не только преуспевают в школьных предметах, но и приобретают важные навыки. И мы сделаем все возможное, чтобы направить их на истинный путь познания.",
+            //SplitItem - Teachers
+            "splitTeachersTitle": "Наши учителя",
+            "splitTeachersDescr": "Преподаватели Академии предлагают вам специальные программы по обучению математике и английскому языку. Разнообразие форматов и курсов обязательно удивит даже самого требовательного студента. Команда высококвалифицированных преподавателей, работающих в соответствии с требованиями XXI века, делает процесс обучения легким и интересным.",
+            //SplitItem - Recommendations
+            "splitRecommendationsTitle": "Принцип работы",
+            "splitRecommendationsDescr": "",
+            
+        }
     }
 };
 

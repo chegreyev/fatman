@@ -3,6 +3,7 @@ import classNames from 'classnames'
 
 import KZ from '../../../assets/images/kazakhstan-flag.png'
 import RU from '../../../assets/images/russian-flag.png'
+import i18n from '../../../i18n'
 
 const HeaderNav = ({
     className,
@@ -58,8 +59,8 @@ const HeaderNav = ({
                     </a>
                 </li>
                 <li className="language-selector">
-                    <img src={KZ} alt="flag" className="flag-header" />
-                    <img src={RU} alt="flag" className="flag-header" />
+                    <img src={KZ} onClick={() => {i18n.changeLanguage("kz")}} alt="flag" className="flag-header" />
+                    <img src={RU} onClick={() => {i18n.changeLanguage("ru")}} alt="flag" className="flag-header" />
                 </li>
 
             </ul>
