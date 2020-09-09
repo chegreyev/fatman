@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {EffectCoverflow} from 'swiper';
@@ -12,8 +13,18 @@ import Review3 from '../../assets/images/review-3.jpg'
 SwiperCore.use([EffectCoverflow])
 
 export default () => {
+    const { t, i18n } = useTranslation();
     return (
-        // <div className="container">
+        <div className="container">
+
+            <div className="center-content section-header" >
+                <div className="container-xs">
+                    <h2 className="mt-0 mb-0">
+                        {t('recommendationSectionTitle')}
+                    </h2>
+                </div>
+            </div>
+
             <Swiper
                 spaceBetween={20}
                 slidesPerView={3}
@@ -35,6 +46,6 @@ export default () => {
                 </SwiperSlide>
 
             </Swiper>
-        // </div>
+        </div>
     );
 };

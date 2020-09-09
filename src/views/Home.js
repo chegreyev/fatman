@@ -4,7 +4,7 @@ import Hero from '../components/sections/Hero';
 import FeaturesTiles from '../components/sections/FeaturesTiles';
 import FeaturesSplit from '../components/sections/FeaturesSplit';
 // import Testimonial from '../components/sections/Testimonial';
-import ScrollingItems from '../components/elements/ScrollingItems'
+// import ScrollingItems from '../components/elements/ScrollingItems'
 
 import RecomSection from '../components/sections/RecomSection'
 
@@ -15,7 +15,7 @@ const Home = () => {
       <Hero className="illustration-section-01" />
       <FeaturesTiles />
       <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
-      <ScrollingItems />
+      {/* <ScrollingItems /> */}
       {/* <Testimonial topDivider /> */}
       <RecomSection />
     </>

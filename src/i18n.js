@@ -53,9 +53,12 @@ const resources = {
             //SplitItem - Teachers
             "splitTeachersTitle": "Біздің ұстаздарымыз",
             "splitTeachersDescr": "Академия мұғалімдері математика және ағылшын тілін оқытуда сіздерге ерекше  бағдарламаларды ұсынады. Түрлі форматтар мен курстар тіпті ең талапшыл оқушыны да таң қалдырарлығы сөзсіз. XXI ғасыр талаптарына сай жұмыс атқаратын жоғары білікті мұғалімдер тобы оқу процесін жеңіл әрі қызықты етеді.",
-            //SplitItem - Recommendations
+            // SplitItem - Recommendations
             "splitRecommendationsTitle": "Жұмыс принципі",
             "splitRecommendationsDescr": "",
+
+            // Recommendations
+            "recommendationSectionTitle": "Пікірлер",
             
         }
     },
@@ -112,6 +115,8 @@ const resources = {
             "splitRecommendationsTitle": "Принцип работы",
             "splitRecommendationsDescr": "",
             
+            // Recommendations
+            "recommendationSectionTitle": "Отзывы",
         }
     }
 };
