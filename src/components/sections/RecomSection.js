@@ -28,6 +28,7 @@ export default () => {
             <Swiper
                 spaceBetween={20}
                 slidesPerView={3}
+                grabCursor
                 effect="coverflow"
                 loop={true}
                 // onSlideChange={() => console.log('slide change')}
