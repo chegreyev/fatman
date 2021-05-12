@@ -22,7 +22,7 @@
     "react-router-hash-link": "^2.0.0",
     "react-scripts": "^3.4.1",
     "react-scrollable-anchor": "^0.6.1",
-    "swiper": "^6.2.0"
+    "swiper": "^6.5.1"
   },
   "scripts": {
     "predeploy": "yarn run build",
